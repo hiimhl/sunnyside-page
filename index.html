@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Sunnyside agency landing page | 반응형 연습2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap" rel="stylesheet">
+  
+  <script
+  src="https://kit.fontawesome.com/31f273f6bf.js"
+  crossorigin="anonymous"
+></script>
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="style.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!-- navbar -->
+  <header class="nav-container">
+    <nav class="navbar">
+      <a href="#" class="navbar__logo">sunnyside</a>
+      <button class="hidden navbar__hambar"><i class="fa-solid fa-bars"></i></button>
+      <ul class="navbar__menu">
+        <li class="navbar__link"><a class="navbar__a__nomal navbar__link__a" href="#">About</a></li>
+        <li class="navbar__link"><a class="navbar__a__nomal navbar__link__a" href="#">Services</a></li>
+        <li class="navbar__link"><a class="navbar__a__nomal navbar__link__a" href="#">Projects</a></li>
+        <li class="navbar__link navbar__last__li"><a class="navbar__last navbar__link__a" href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-main">
+      <h1>
+        We are creatives
+      </h1>
+      <i class="fa-solid fa-arrow-down-long"></i>
+    </div>
+  </header>
+  <!-- card container -->
+  <section class="card-container">
+<div class="card1 card">
+  <div class="card__content">
+    <h1 class="card__content__title">
+      Transform your brand
+    </h1>
+    <span class="card__content__text">
+      We are a full-service creative agency specializing in helping brands grow fast. 
+      Engage your clients through compelling visuals that do most of the marketing for you.
+    </span>
+    <button class="card__content__btn">Learn more</button>
+  </div>
+  <img class="card__img" src="images/desktop/image-transform.jpg"/>
+</div>
+<div class="card2 card">
+  <img class="card__img" src="images/desktop/image-stand-out.jpg"/>
+  <div class="card__content">
+    <h1 class="card__content__title">
+      Stand out to the right audience
+    </h1>
+    <span class="card__content__text">
+      Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+    </span>
+    <button class="card__content__btn pink">Learn more</button>
+    </div>
+  </div>
+</div>
+<div class="card3 card">
+  <div class="card__img card3__imgBox">
+    <img class="card3__img" src="images/desktop/image-graphic-design.jpg"/>
+    <div class="card3__content">
+      <h4 class="card3__title">
+        Graphic design
+      </h4>
+      <span class="card3__text">
+        Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+      </span>
+    </div>
+  </div>
+  <div class="card__img card3__imgBox">
+    <img class="card3__img" src="images/desktop/image-photography.jpg"/>
+    <div class="card3__content">
+      <h4 class="card3__title">
+        Photography
+      </h4>
+      <span class="card3__text">
+        Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+      </span>
+    </div> 
+  </div>
+</div>
+  </section>
+  <!-- profile  -->
+  <section class="profile-container">
+    <h3 class="profile__title">Client testimonials</h3>
+    <ul class="profile__lists">
+      <li id="emily" class="profile__list">
+        <div  class="profile__list__img emily"></div>
+        <span class="profile__list__text">  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+        </span>
+        <p class="profile__list__name">Emily R.</p>
+        <p class="profile__list__job">Marketing Director</p>
+      </li>
+      <li class="profile__list">
+        <div class="profile__list__img thomas"></div>
+        <span class="profile__list__text">  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+        </span>
+        <p class="profile__list__name">Thomas S.</p>
+        <p class="profile__list__job">Chief Operating Officer</p>
+      </li>
+      <li class="profile__list">
+        <div class="profile__list__img jennie"></div>
+        <span class="profile__list__text">  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+        </span>
+        <p class="profile__list__name">Jennie F.</p>
+        <p class="profile__list__job">Business Owner</p>
+      </li>
+    </ul>
+  </section>
+  <!-- background imgs -->
+  <section class="img-container">
+    <div class="img__milk"></div>
+    <div class="img__orange"></div>
+    <div class="img__corn"></div>
+    <div class="img__sugar"></div>
+  </section>
+  <footer class="footer">
+    <h1 class="footer__title">sunnyside</h1>
+    <nav class="footer__content">
+        <ul class="footer__links">
+          <li class="footer__link"><a href="#">About</a></li>
+          <li class="footer__link"><a href="#">Services</a></li>
+          <li class="footer__link"><a href="#">Projects</a></li>
+        </ul>
+        <div class="footer__logos">
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+    </nav>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">HL.K</a>.
+    </div>
+  </footer>
+
+</body>
+</html>
