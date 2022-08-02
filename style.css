@@ -26,6 +26,7 @@
 body {
   max-width: 1440px;
   height: auto;
+  margin: auto;
 }
 
 button {
@@ -48,6 +49,7 @@ a {
   background: center/cover url("images/desktop/image-header.jpg");
   width: 100%;
   height: 90vh;
+  margin: auto;
 }
 .navbar {
   display: flex;
@@ -202,8 +204,8 @@ a {
 
 .profile-container {
   width: 80%;
-  height: 50vh;
-  margin: 0 auto 7rem auto;
+  height: 55vh;
+  margin: 0 auto 13rem auto;
   text-align: center;
 }
 
@@ -218,13 +220,14 @@ a {
 
 .profile__lists {
   display: flex;
-  height: 20rem;
+  height: 21rem;
   width: 100%;
   text-align: center;
   align-items: center;
   font-family: var(--basic-font);
   font-size: var(--basic-font-size);
   justify-content: space-between;
+  margin-top: var(--basic-xl-space);
 }
 
 .profile__list {
@@ -232,7 +235,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 19rem;
+  height: 21rem;
   width: 32%;
 }
 
@@ -251,7 +254,7 @@ a {
   height: 70px;
   border-radius: 50%;
   /* background-color: var(--yellow-color); */
-  margin-top: var(--basic-xl-space);
+  margin: var(--basic-xl-space) 0;
 }
 
 .profile__list__text {
@@ -341,4 +344,34 @@ a {
   }
 
   /* profile */
+  .profile-container {
+    height: 200vh;
+    width: 100%;
+    margin: 0 auto 7rem auto;
+  }
+  .profile__title {
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .profile__lists {
+    flex-direction: column;
+    height: 190vh;
+    justify-content: flex-start;
+  }
+  .profile__list {
+    height: 60vh;
+    width: 90%;
+    margin-bottom: var(--basic-l-space);
+  }
+
+  .profile__list__text {
+    margin-top: var(--basic-l-space);
+    width: 90%;
+    font-weight: 600;
+    color: rgb(36, 36, 36);
+  }
+  .profile__list__name {
+    margin-bottom: var(--basic-m-space);
+  }
 }
