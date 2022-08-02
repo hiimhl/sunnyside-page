@@ -64,6 +64,9 @@ a {
   font-weight: 900;
   letter-spacing: 0.1rem;
 }
+.navbar__hambar {
+  display: none;
+}
 .navbar__menu {
   display: flex;
   font-weight: 600;
@@ -91,17 +94,6 @@ a {
   color: black;
   text-transform: uppercase;
   transition: color 0.3s ease-in;
-}
-/* nav menu hover */
-.navbar__last__li:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.navbar__a__nomal:hover {
-  color: black;
-}
-.navbar__last:hover {
-  color: white;
 }
 
 .nav-main {
@@ -355,32 +347,73 @@ a {
   transition: color 0.3s;
 }
 
-.footer__links a:hover,
-.footer__logos i:hover {
-  color: white;
-}
+/* hover */
+@media (min-width: 475px) {
+  /* nav menu hover */
+  .navbar__last__li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
 
+  .navbar__a__nomal:hover {
+    color: black;
+  }
+  .navbar__last:hover {
+    color: white;
+  }
+
+  .footer__links a:hover,
+  .footer__logos i:hover {
+    color: white;
+  }
+}
+.hidden {
+  display: none;
+}
 /* mobile */
 @media (max-width: 475px) {
   body {
     width: 100%;
   }
-  .hidden {
-    display: block;
-  }
+
   /* nav bar  */
   .nav-container {
     width: 100%;
     height: 95vh;
   }
   .navbar__menu {
-    display: none;
+    background: url("images/message1.png") no-repeat;
+    position: absolute;
+    top: 50px;
+    flex-direction: column;
+    width: 85vw;
+    height: 400px;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   .navbar__hambar {
+    display: block;
     color: var(--white-color);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    transform: translateX(10px);
   }
+  .navbar__link a {
+    color: gray;
+    font-size: 1.35rem;
+  }
+  .navbar__link:first-child {
+    margin-top: var(--basic-xl-space);
+  }
+  .navbar__last__li {
+    background-color: var(--yellow-color);
+    padding: var(--basic-m-space) var(--basic-l-space);
+    border-radius: 1.5rem;
+  }
+  .navbar__last__li a {
+    color: black;
+    font-family: var(--title-font);
+  }
+
   .nav-main h1 {
     font-size: 3rem;
   }
