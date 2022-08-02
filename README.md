@@ -1,3 +1,6 @@
 # Frontend Mentor - Sunnyside agency landing page
 
-![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)
+Sunnyside page
+
+- html, css, js(버튼) 사용.
+  pc, 모바일 사이즈로 제작.
