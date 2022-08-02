@@ -381,35 +381,41 @@ a {
     height: 95vh;
   }
   .navbar__menu {
+    display: none;
+  }
+  .navbar__menuBar {
     background: url("images/message1.png") no-repeat;
     position: absolute;
     top: 50px;
+    display: flex;
     flex-direction: column;
     width: 85vw;
     height: 400px;
     justify-content: space-evenly;
     align-items: center;
   }
-
+  .hidden {
+    display: none;
+  }
   .navbar__hambar {
     display: block;
     color: var(--white-color);
     font-size: 1.4rem;
     transform: translateX(10px);
   }
-  .navbar__link a {
+  .navbar__menu__li a {
     color: gray;
     font-size: 1.35rem;
   }
-  .navbar__link:first-child {
+  .navbar__menu__li:first-child {
     margin-top: var(--basic-xl-space);
   }
-  .navbar__last__li {
+  .navbar__menu__last {
     background-color: var(--yellow-color);
     padding: var(--basic-m-space) var(--basic-l-space);
     border-radius: 1.5rem;
   }
-  .navbar__last__li a {
+  .navbar__menu__last a {
     color: black;
     font-family: var(--title-font);
   }

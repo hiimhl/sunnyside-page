@@ -28,11 +28,17 @@
     <nav class="navbar">
       <a href="#" class="navbar__logo">sunnyside</a>
       <button class=" navbar__hambar"><i class="fa-solid fa-bars"></i></button>
-      <ul class="navbar__menu hidden">
+      <ul class="navbar__menu ">
         <li class="navbar__link"><a class="navbar__a__nomal navbar__link__a" href="#">About</a></li>
         <li class="navbar__link"><a class="navbar__a__nomal navbar__link__a" href="#">Services</a></li>
         <li class="navbar__link"><a class="navbar__a__nomal navbar__link__a" href="#">Projects</a></li>
         <li class="navbar__link navbar__last__li"><a class="navbar__last navbar__link__a" href="#">Contact</a></li>
+      </ul>
+      <ul class="hidden navbar__menuBar ">
+        <li class="navbar__menu__li"><a href="#">About</a></li>
+        <li class="navbar__menu__li"><a href="#">Services</a></li>
+        <li class="navbar__menu__li"><a href="#">Projects</a></li>
+        <li class="navbar__menu__li navbar__menu__last"><a class="navbar__last navbar__link__a" href="#">Contact</a></li>
       </ul>
     </nav>
     <div class="nav-main">
@@ -150,7 +156,7 @@
     </div>
   </footer>
 <script>
-  const menu = document.querySelector(".navbar__menu");
+  const menu = document.querySelector(".navbar__menuBar");
   const bambar = document.querySelector(".navbar__hambar")//
     .addEventListener("click",()=>{
       menu.classList.toggle("hidden")  
