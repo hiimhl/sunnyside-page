@@ -22,6 +22,7 @@
   --basic-m-space: 15px;
   --basic-l-space: 30px;
   --basic-xl-space: 40px;
+  --basic-h1-space: 60px;
 }
 body {
   max-width: 1440px;
@@ -48,7 +49,7 @@ a {
 .nav-container {
   background: center/cover url("images/desktop/image-header.jpg");
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   margin: auto;
 }
 .navbar {
@@ -97,10 +98,10 @@ a {
 }
 
 .nav-main {
-  height: 30vh;
+  height: 45vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center;  */
   align-items: center;
   text-align: center;
 }
@@ -108,17 +109,10 @@ a {
 .nav-main h1 {
   text-transform: uppercase;
   font-family: var(--title-font);
-  font-size: 3.5rem;
-  margin-top: var(--basic-l-space);
+  font-size: 3.7rem;
+  margin: 100px;
   color: var(--white-color);
   letter-spacing: 0.5rem;
-}
-
-.nav-main i {
-  margin-top: calc(var(--basic-l-space) * 2);
-  color: var(--white-color);
-  font-size: 3rem;
-  /* line-height: 20px; */
 }
 
 /* Card container */
@@ -131,15 +125,19 @@ a {
 
 .card {
   width: 100%;
-  /* height: 80vh; */
-  display: flex;
+  height: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 .card__content {
-  width: 50%;
+  box-sizing: border-box;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  padding: 7rem;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  padding: 25% 7rem;
 }
 .card__content__title {
   font-size: 2.8rem;
@@ -166,25 +164,33 @@ a {
 }
 
 .card__img {
-  width: 50%;
-  /* height: auto; */
+  width: 100%;
+  height: auto;
+}
+.card__transform {
+  background: url("images/desktop/image-transform.jpg") center/cover;
+}
+.card__stand {
+  background: url("images/desktop/image-stand-out.jpg") center/cover;
 }
 
-.card3 {
-  position: relative;
-}
-.card3__content {
-  position: relative;
-  top: -220px;
+.card__bottom {
+  box-sizing: border-box;
   text-align: center;
-  width: 60%;
-  margin: auto;
+  padding: 60% 7rem 15% 7rem;
   font-family: var(--basic-font);
 }
-
+.card__graphic {
+  background: url("images/desktop/image-graphic-design.jpg") center/cover;
+  color: var(--cyan-graphic-color);
+}
+.card__photography {
+  background: url("images/desktop/image-photography.jpg") center/cover;
+  color: var(--dark-blue-photography-color);
+}
 .card3__title {
   font-family: var(--title-font);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-bottom: var(--basic-m-space);
 }
 
@@ -199,7 +205,7 @@ a {
   width: 80%;
   height: 55vh;
   max-height: 470px;
-  margin: 0 auto 13rem auto;
+  margin: 13rem auto;
 
   text-align: center;
 }
@@ -340,7 +346,7 @@ a {
   margin-top: var(--basic-l-space);
   margin-bottom: var(--basic-m-space);
 }
-.footer__logos i {
+.footer__logos img {
   color: var(--cyan-graphic-color);
   margin-right: var(--basic-m-space);
   font-size: 1.3rem;
@@ -422,6 +428,9 @@ a {
 
   .nav-main h1 {
     font-size: 3rem;
+  }
+  .nav-main > img {
+    margin-top: var(--basic-m-space);
   }
 
   /* card */
